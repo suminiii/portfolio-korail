@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="script/slick.css">
+    <style>
+        *{margin: 0; padding: 0;}
+        .wrap1 div{
+            text-align: center;
+            line-height: 400px;
+            height: 400px;
+            font-size: 100px;
+            color: #fff;
+        }
+        .wrap1 .con1{background-color: darkblue;}
+        .wrap1 .con2{background-color: darkcyan;}
+        .wrap1 .con3{background-color: darkkhaki;}
+        .wrap1 .con4{background-color: darkslateblue;}
+        .wrap1 .con5{background-color: darksalmon;}
+        /*
+        dots들 동그란 형테로 가운데 정렬
+        arrow 버튼들 좌우로 배치
+        */
+        button{
+            background-color: transparent;
+            border: 0;
+            /* font-size: 0; */
+        }
+        .arrow{
+            z-index: 1;
+            font-size: 30px;
+            color: #fff;
+            padding: 10px;
+            position: absolute;
+            top: 200px;
+            transform: translateY(-50%);  
+        }
+        .prev{
+            left: 10px;
+        }
+        .next{
+            right: 10px;  
+        } 
+        .slick-dots{
+            display: flex;
+            list-style: none;
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .slick-dots li{
+            margin: 0 8px;
+        }
+        .slick-dots li button{
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: #fff;
+            opacity: 0.5;
+            font-size: 0;
+        }
+        .slick-dots li.slick-active button{
+            opacity: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrap1">
+        <div class="con1">CONTENT1</div>
+        <div class="con2">CONTENT2</div>
+        <div class="con3">CONTENT3</div>
+        <div class="con4">CONTENT4</div>
+        <div class="con5">CONTENT5</div>
+    </div>
+    <button class="arrow prev"><<</button>
+    <button class="arrow next">>></button>
+
+    <script src="script/jquery-3.6.0.min.js"></script>
+    <script src="script/slick.min.js"></script>
+    <script>
+        $(".wrap1").slick({
+            "dots" : true,
+            // "arrows" :false,
+            "prevArrow" :".prev",
+            "nextArrow" :".next",
+            // slick의 버튼 대신 따로 만든 버튼으로 제어가능
+            "slidesToShow" : 3,
+            // slider를 3개씩 한 화면에
+            "slidesToScroll" : 2
+            // slider를 2개씩 스크롤
+        });
+
+    </script>
+
+</body>
+</html>

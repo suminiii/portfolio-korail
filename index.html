@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/jquery-3.6.0.min.js"></script>
+    <script src="script/slick.min.js"></script>
+    <script src="script/main.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+        integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <div class="wrap">
+                <h1><a href="#"><img src="images/lets_logo.gif" alt="Let's Korail"></a></h1>
+                <button class="navOpen">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <nav>
+                <div class="wrap">
+                    <button class="navClose">
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="util">
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-sign-in-alt"></i>
+                                로그인
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-user-alt"></i>
+                                마이페이지
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-shopping-cart"></i>
+                                장바구니
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-headphones-alt"></i>
+                                고객센터
+                            </a>
+                        </li>
+                        <li class="lang">
+                            <a href="#">
+                                LANGUAGE
+                                <i class="fas fa-sort-down"></i>
+                            </a>
+                        </li>
+                        <li><a href="#">코레일홈페이지</a></li>
+                        <li><a href="#">기업전용</a></li>
+                    </ul>
+                    <div class="navBanner">
+                        <img src="images/banner_mini.jpg" alt="">
+                        <img src="images/banner_mini2.jpg" alt="">
+                        <img src="images/banner_mini3.jpg" alt="">
+                    </div>
+                </div>
+                <ul class="gnb">
+                    <li>
+                        <a href="#">승차권</a>
+                        <ul class="sub">
+                            <li>
+                                <a href="#">승차권예약</a>
+                                <ul class="sub2">
+                                    <li><a href="#">일반승차권</a></li>
+                                    <li><a href="#">할인승차권</a></li>
+                                    <li><a href="#">4인동반석</a></li>
+                                    <li><a href="#">관광열차</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">발권/취소/변경</a>
+                                <ul class="sub2">
+                                    <li><a href="#">발권/취소(반환)</a></li>
+                                    <li><a href="#">예약변경</a></li>
+                                    <li><a href="#">이용내역/영수증출력</a></li>
+                                    <li><a href="#">과거이용내역신청/조회</a></li>
+                                    <li><a href="#">도시락/제휴상품영수증</a></li>
+                                    <li><a href="#">인터넷반환접수</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">정기승차권</a>
+                                <ul class="sub2">
+                                    <li><a href="#">정기승차권조회</a></li>
+                                    <li><a href="#">정기승차권발급</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">미등록고객서비스</a>
+                                <ul class="sub2">
+                                    <li><a href="#">승차권예약</a></li>
+                                    <li><a href="#">발권/취소(반환)</a></li>
+                                    <li><a href="#">받은승차권 예약취소</a></li>
+                                    <li><a href="#">승차권재발권</a></li>
+                                    <li><a href="#">이용내역/영수증출력</a></li>
+                                    <li><a href="#">지연료 계좌반환 신청</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">이용안내</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">관광열차</a>
+                        <ul class="sub">
+                            <li>
+                                <a href="#">동해산타열차</a>
+                                <ul class="sub2">
+                                    <li><a href="#">동해산타열차 소개</a></li>
+                                    <li><a href="#">동해산타열차 추천여행</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">서해금빛열차</a>
+                                <ul class="sub2">
+                                    <li><a href="#">West gold-tran 소개</a></li>
+                                    <li><a href="#">West gold-tran 추천여행</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">백두대간협곡열차</a>
+                                <ul class="sub2">
+                                    <li><a href="#">V-tran 소개</a></li>
+                                    <li><a href="#">V-tran 추천여행</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">남도해양열차</a>
+                                <ul class="sub2">
+                                    <li><a href="#">S-train 소개</a></li>
+                                    <li><a href="#">S-train 추천여행</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">평화열차DMZ</a>
+                                <ul class="sub2">
+                                    <li><a href="#">DMZ-train 소개</a></li>
+                                    <li><a href="#">DMZ-train 추천여행</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">정선아리랑열차</a>
+                                <ul class="sub2">
+                                    <li><a href="#">A-train 소개</a></li>
+                                    <li><a href="#">A-train 추천여행</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">레일크루즈해랑</a>
+                            </li>
+                            <li>
+                                <a href="#">바다열차</a>
+                            </li>
+                            <li>
+                                <a href="#">교육열차</a>
+                            </li>
+                            <li>
+                                <a href="#">국악와인열차</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">자유여행</a>
+                        <ul class="sub">
+                            <li>
+                                <a href="#">국내여행패스</a>
+                                <ul class="sub2">
+                                    <li><a href="#">내일로 두번째 이야기</a></li>
+                                    <li><a href="#">문화누리패스</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">해외여행패스</a>
+                                <ul class="sub2">
+                                    <li><a href="#">일본패스</a></li>
+                                    <li><a href="#">유럽패스</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">기차여행만들기</a>
+                            </li>
+                            <li>
+                                <a href="#">호텔예약</a>
+                            </li>
+                            <li>
+                                <a href="#">렌터카예약</a>
+                                <ul class="sub2">
+                                    <li><a href="#">롯데렌터카</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">여행상품</a>
+                        <ul class="sub">
+                            <li>
+                                <a href="#">테마패키지</a>
+                                <ul class="sub2">
+                                    <li><a href="#">우리지역 대표상품</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">KTX+연계서비스</a>
+                                <ul class="sub2">
+                                    <li><a href="#">레일텔</a></li>
+                                    <li><a href="#">레일쉽-제주도(목포)</a></li>
+                                    <li><a href="#">레일쉽-제주도(여수)</a></li>
+                                    <li><a href="#">레일쉽-울릉도(포항)</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">국내패키지</a>
+                                <ul class="sub2">
+                                    <li><a href="#">수도권</a></li>
+                                    <li><a href="#">강원권</a></li>
+                                    <li><a href="#">충청권</a></li>
+                                    <li><a href="#">경상권</a></li>
+                                    <li><a href="#">전라권</a></li>
+                                    <li><a href="#">제주권</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">이달의 기차여행</a>
+                            </li>
+                            <li>
+                                <a href="#">여행상품예약확인</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">종합이용안내</a>
+                        <ul class="sub">
+                            <li><a href="#">할인 및 부가서비스</a></li>
+                            <li><a href="#">승차권 이용안내</a></li>
+                            <li><a href="#">교통약자 배려서비스</a></li>
+                            <li><a href="#">전철이용안내/지연증명</a></li>
+                            <li><a href="#">유실물</a></li>
+                            <li><a href="#">고객의소리 접수/조회</a></li>
+                            <li><a href="#">철도고객센터</a></li>
+                            <li><a href="#">광고안내</a></li>
+                            <li><a href="#">승차권 제휴할인 안내</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">기차역정보</a>
+                        <ul class="sub">
+                            <li>
+                                <a href="#">기차역 안내</a>
+                                <ul class="sub2">
+                                    <li><a href="#">KTX역</a></li>
+                                    <li><a href="#">일반철도</a></li>
+                                    <li><a href="#">광역철도</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">철도 노선 안내</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="banner">
+            <div class="bannerImg">
+                <img class="m" src="images/mainvisual_mobile.png" alt="">
+                <img class="pc" src="images/mainvisual_pc.png" alt="">
+            </div>
+            <h2>사람 · 세상 · 미래를 잇는 대한민국 철도</h2>
+            <div class="wrap">
+                <div class="reservationBox">
+                    <ul class="tapName">
+                        <li class="select"><a href="#">승차권간편예매</a></li>
+                        <li><a href="#">기차여행검색</a></li>
+                    </ul>
+                    <div class="contentBox">
+                        <div class="select">
+                            <ul class="way">
+                                <li class="select"><a href="#">왕복</a></li>
+                                <li><a href="#">편도</a></li>
+                            </ul>
+                            <div class="wayContent">
+                                <div class="select">
+                                    <form action="">
+                                        <div class="placeBox">
+                                            <button class="placeValue"><span>출발지</span>서울</button>
+                                            <button class="allow"><i class="fas fa-sync-alt"></i></button>
+                                            <button class="placeValue"><span>도착지</span>부산</button>
+                                        </div>
+                                        <div class="timeBox">
+                                            <input class="date" type="text" placeholder="가는날">
+                                            <select class="time" name="" id="">
+                                                <option value="">가는시간</option>
+                                                <option value="">오전 0시</option>
+                                                <option value="">오전 1시</option>
+                                                <option value="">오전 2시</option>
+                                                <option value="">오전 3시</option>
+                                                <option value="">오전 4시</option>
+                                                <option value="">오전 5시</option>
+                                                <option value="">오전 6시</option>
+                                                <option value="">오전 7시</option>
+                                                <option value="">오전 8시</option>
+                                                <option value="">오전 9시</option>
+                                                <option value="">오전 10시</option>
+                                                <option value="">오전 11시</option>
+                                                <option value="">오전 12시</option>
+                                                <option value="">오후 1시</option>
+                                                <option value="">오후 2시</option>
+                                                <option value="">오후 3시</option>
+                                                <option value="">오후 4시</option>
+                                                <option value="">오후 5시</option>
+                                                <option value="">오후 6시</option>
+                                                <option value="">오후 7시</option>
+                                                <option value="">오후 8시</option>
+                                                <option value="">오후 9시</option>
+                                                <option value="">오후 10시</option>
+                                                <option value="">오후 11시</option>
+                                            </select>
+                                            <input class="date" type="text" placeholder="오는날">
+                                            <select class="time" name="" id="">
+                                                <option value="">오는시간</option>
+                                                <option value="">오전 0시</option>
+                                                <option value="">오전 1시</option>
+                                                <option value="">오전 2시</option>
+                                                <option value="">오전 3시</option>
+                                                <option value="">오전 4시</option>
+                                                <option value="">오전 5시</option>
+                                                <option value="">오전 6시</option>
+                                                <option value="">오전 7시</option>
+                                                <option value="">오전 8시</option>
+                                                <option value="">오전 9시</option>
+                                                <option value="">오전 10시</option>
+                                                <option value="">오전 11시</option>
+                                                <option value="">오전 12시</option>
+                                                <option value="">오후 1시</option>
+                                                <option value="">오후 2시</option>
+                                                <option value="">오후 3시</option>
+                                                <option value="">오후 4시</option>
+                                                <option value="">오후 5시</option>
+                                                <option value="">오후 6시</option>
+                                                <option value="">오후 7시</option>
+                                                <option value="">오후 8시</option>
+                                                <option value="">오후 9시</option>
+                                                <option value="">오후 10시</option>
+                                                <option value="">오후 11시</option>
+                                            </select>
+                                        </div>
+                                        <div class="headcountBox">
+                                            <select class="headcount" name="" id="">
+                                                <option value="">인원</option>
+                                                <option value="">성인1명</option>
+                                                <option value="">성인2명</option>
+                                                <option value="">성인3명</option>
+                                                <option value="">성인4명</option>
+                                                <option value="">성인5명</option>
+                                            </select>
+                                        </div>
+                                    </form>
+                                    <button class="res">승차권예매></button>
+                                </div>
+                                <div>
+                                    <form action="">
+                                        <div class="placeBox">
+                                            <button class="placeValue"><span>출발지</span>서울</button>
+                                            <button class="allow"><i class="fas fa-sync-alt"></i></button>
+                                            <button class="placeValue"><span>도착지</span>부산</button>
+                                        </div>
+                                        <div class="timeBox">
+                                            <input class="date" type="text" placeholder="가는날">
+                                            <select class="time" name="" id="">
+                                                <option value="">가는시간</option>
+                                                <option value="">오전 0시</option>
+                                                <option value="">오전 1시</option>
+                                                <option value="">오전 2시</option>
+                                                <option value="">오전 3시</option>
+                                                <option value="">오전 4시</option>
+                                                <option value="">오전 5시</option>
+                                                <option value="">오전 6시</option>
+                                                <option value="">오전 7시</option>
+                                                <option value="">오전 8시</option>
+                                                <option value="">오전 9시</option>
+                                                <option value="">오전 10시</option>
+                                                <option value="">오전 11시</option>
+                                                <option value="">오전 12시</option>
+                                                <option value="">오후 1시</option>
+                                                <option value="">오후 2시</option>
+                                                <option value="">오후 3시</option>
+                                                <option value="">오후 4시</option>
+                                                <option value="">오후 5시</option>
+                                                <option value="">오후 6시</option>
+                                                <option value="">오후 7시</option>
+                                                <option value="">오후 8시</option>
+                                                <option value="">오후 9시</option>
+                                                <option value="">오후 10시</option>
+                                                <option value="">오후 11시</option>
+                                            </select>
+                                        </div>
+                                        <div class="headcountBox">
+                                            <select class="headcount" name="" id="">
+                                                <option value="">인원</option>
+                                                <option value="">성인1명</option>
+                                                <option value="">성인2명</option>
+                                                <option value="">성인3명</option>
+                                                <option value="">성인4명</option>
+                                                <option value="">성인5명</option>
+                                            </select>
+                                        </div>
+                                    </form>
+                                    <button class="res">승차권예매></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <form action="">
+                                <select class="theme" name="" id="">
+                                    <option value="">여행테마</option>
+                                    <option value="">전체</option>
+                                    <option value="">관광지</option>
+                                    <option value="">숙박</option>
+                                    <option value="">체험</option>
+                                    <option value="">교통</option>
+                                    <option value="">쇼핑</option>
+                                    <option value="">음식</option>
+                                    <option value="">기타</option>
+                                </select>
+                                <select class="region" name="" id="">
+                                    <option value="">여행지역</option>
+                                    <option value="">전체</option>
+                                    <option value="">수도권</option>
+                                    <option value="">강원권</option>
+                                    <option value="">충청권</option>
+                                    <option value="">경상권</option>
+                                    <option value="">전라권</option>
+                                    <option value="">제주권</option>
+                                </select>
+                                <input class="date" type="text" placeholder="출발일">
+                                <input class="name" type="text" placeholder="상품명">
+                            </form>
+                            <button class="searchBtn">기차여행검색</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrap">
+            <ul class="quickMenu">
+                <li class="select">
+                    <a href="#">
+                        <img src="images/quickMenu_1.png" alt="">
+                        <p>관광열차</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/quickMenu_2.png" alt="">
+                        <p>자유여행</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/quickMenu_3.png" alt="">
+                        <p>렌터카</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/quickMenu_4.png" alt="">
+                        <p>자유여행패스</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/quickMenu_5.png" alt="">
+                        <p>회의실</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/quickMenu_6.png" alt="">
+                        <p>레일텔</p>
+                    </a>
+                </li>
+            </ul>
+            <div class="sale">
+                <h3>KTX 할인상품</h3>
+                <ul>
+                    <li>
+                        <span class="dot"></span>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/icon_1.png" alt="">
+                                <img class="over" src="images/icon_over_1.png" alt="">
+                            </div>
+                            <p>청소년드림</p>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="dot"></span>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/icon_2.png" alt="">
+                                <img class="over" src="images/icon_over_2.png" alt="">
+                            </div>
+                            <p>힘내라청춘</p>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="dot"></span>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/icon_3.png" alt="">
+                                <img class="over" src="images/icon_over_3.png" alt="">
+                            </div>
+                            <p>맘편한 KTX</p>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="dot"></span>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/icon_4.png" alt="">
+                                <img class="over" src="images/icon_over_4.png" alt="">
+                            </div>
+                            <p>다자녀행복</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="f_banner">
+                <img src="images/banner_mini.jpg" alt="">
+                <img src="images/banner_mini2.jpg" alt="">
+                <img src="images/banner_mini3.jpg" alt="">
+            </div>
+            <div class="notice">
+                <h3>공지사항</h3>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span class="date">10<br>15</span>
+                            <p class="con">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonum</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="date">10<br>15</span>
+                            <p class="con">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonum</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="date">10<br>15</span>
+                            <p class="con">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonum</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <footer>
+            <div class="wrap">
+                <ul class="f_menu">
+                    <li><a href="#">홈페이지이용약관</a></li>
+                    <li><a href="#">여객운송약관/부속약관</a></li>
+                    <li><a href="#">정보공개</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">이메일무단수집거부</a></li>
+                    <li><a href="#">저작권정책</a></li>
+                </ul>
+                <h2><img src="images/lets_logo.gif" alt=""></h2>
+                <address>
+                    <ul>
+                        <li>대표자 : 손병석</li>
+                        <li>상호 : 한국철도공사</li>
+                        <li>사업자등록 : 314-82-10024</li>
+                        <li>통신판매업신고 : 대전동구-0233호</li>
+                        <li>주소 : (34618)대전광역시 동구 중앙로 240</li>
+                        <li>TEL : 1544-7788</li>
+                        <li>FAX : 02-361-8385</li>
+                    </ul>
+                </address>
+                <p class="copyright">COPYRIGHT ⓒ 2014 By KOREA RAILROAD All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
