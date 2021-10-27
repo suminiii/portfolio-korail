@@ -81,7 +81,7 @@ header nav{
     top: 0;
     /* left: 0; */
     left: -100%;
-    overflow: scroll;
+    overflow: hidden scroll;
     -ms-overflow-style: none;
     display: flex;
     flex-direction: column;
